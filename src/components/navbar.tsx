@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const links = [
-    { href: "/portfolio/", label: "Home" },
-    { href: "/portfolio/competitions", label: "Competitions" },
-    { href: "/portfolio/projects", label: "Projects" },
+    { href: "/", label: "Home" },
+    { href: "/competitions", label: "Competitions" },
+    { href: "/projects", label: "Projects" },
 ];
 
 const Navbar: React.FC = () => {
