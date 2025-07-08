@@ -3,9 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const links = [
-    { href: "./", label: "Home" },
-    { href: "./competitions", label: "Competitions" },
-    { href: "./projects", label: "Projects" },
+    { href: "/portfolio/", label: "Home" },
+    { href: "/portfolio/competitions", label: "Competitions" },
+    { href: "/portfolio/projects", label: "Projects" },
 ];
 
 const Navbar: React.FC = () => {
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
                     <li key={link.href}>
                         <Link
                             href={link.href}
-                            className={`text-gray-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-500 font-semibold transition-colors ${router.asPath === link.href.replace('./', '/') ? 'border-b-2 border-blue-600 dark:border-blue-500 pb-1' : ''}`}
+                            className={`text-gray-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-500 font-semibold transition-colors ${router.asPath === link.href ? 'border-b-2 border-blue-600 dark:border-blue-500 pb-1' : ''}`}
                         >
                             {link.label}
                         </Link>
