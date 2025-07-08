@@ -12,9 +12,6 @@ export default function Home() {
           <h1 className="text-3xl sm:text-5xl font-bold mb-2 text-blue-600 dark:text-blue-500">Omer Yassir</h1>
           <h2 className="text-xl sm:text-2xl text-gray-800 dark:text-slate-100 mb-1">Software & ML Engineer</h2>
           <h3 className="text-lg sm:text-xl text-amber-500 dark:text-amber-500">Kaggle & Zindi Competitor</h3>
-          <h4 className="text-lg sm:text-xl text-gray-500 dark:text-slate-400 mb-6">
-            Student at Faculty of Computers and Artificial Intelligence Cairo University
-          </h4>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
             <a
               href="https://github.com/omerym"

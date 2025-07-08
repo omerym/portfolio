@@ -1,4 +1,6 @@
 import Head from "next/head";
+import ProjectCard from "@/components/ProjectCard";
+import Image from "next/image";
 
 export default function Projects() {
     return (
@@ -6,10 +8,22 @@ export default function Projects() {
             <Head>
                 <title>Omer Yassir - Projects</title>
             </Head>
-            <div className="flex flex-col items-center justify-center min-h-screen p-8">
-                <h1 className="text-4xl font-bold mb-4">Project</h1>
-                <p className="text-lg text-gray-600">This is the project page. Add your project details here.</p>
-            </div>
+            <main className="pt-10 px-2 sm:pt-16 sm:px-4 max-w-5xl mx-auto min-h-screen">
+                <div className="grid gap-8 sm:grid-cols-2">
+                    <ProjectCard
+                        title="Countries Viewer"
+                        icon={<Image src="/countries_viewer/Screenshot 2024-10-11 203328.png" alt="Countries Viewer" width={48} height={48} className="rounded" />}
+                        description="A React + TypeScript app to view, search, and quiz yourself on countries and their details."
+                        projectSlug="countries-viewer"
+                    />
+                    <ProjectCard
+                        title="Aljarray"
+                        icon={<Image src="/aljarray/Icon.png" alt="Aljarray" width={48} height={48} className="rounded" />}
+                        description="A unity infinite runner mobile game."
+                        projectSlug="aljarray"
+                    />
+                </div>
+            </main>
         </>
     );
 }
