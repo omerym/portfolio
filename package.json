@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "GITHUB_PAGES=true next build && GITHUB_PAGES=true next export"
   },
   "dependencies": {
     "next": "^15.3.5",
