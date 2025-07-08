@@ -8,7 +8,7 @@ export default function Projects() {
     return (
         <>
             <Head>
-                <title>Omer Yassir - Projects</title>
+                <title>Projects | Omer Yassir</title>
             </Head>
             <main className="pt-10 px-2 sm:pt-16 sm:px-4 max-w-5xl mx-auto min-h-screen">
                 <div className="grid gap-8 sm:grid-cols-2">
