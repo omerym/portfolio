@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import ImageCarousel from "@/components/ImageCarousel";
+import { withBasePath } from "@/utils/withBasePath";
 
 const images = [
     "EiV62h.png",
@@ -22,7 +23,7 @@ export default function Aljarray() {
             <main className="pt-10 px-2 sm:pt-10 sm:px-4 max-w-3xl mx-auto min-h-screen">
                 <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6 border border-gray-200 dark:border-slate-700 flex flex-col gap-6  mb-8">
                     <div className="flex items-center gap-4">
-                        <Image src="/aljarray/Icon.png" alt="Aljarray" width={48} height={48} className="rounded" priority={true} />
+                        <Image src={withBasePath("/aljarray/Icon.png")} alt="Aljarray" width={48} height={48} className="rounded" priority={true} />
                         <h1 className="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-500">Aljarray</h1>
                     </div>
                     <ImageCarousel folder="aljarray" images={images} altPrefix="Screenshot" />

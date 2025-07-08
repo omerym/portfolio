@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import ImageCarousel from "@/components/ImageCarousel";
+import { withBasePath } from "@/utils/withBasePath";
 
 const images = [
     "Screenshot 2024-10-11 203328.png",
@@ -21,7 +22,7 @@ export default function CountriesViewer() {
             <main className="pt-10 px-2 sm:pt-10 sm:px-4 max-w-3xl mx-auto">
                 <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6 border border-gray-200 dark:border-slate-700 flex flex-col gap-6 mb-8">
                     <div className="flex items-center gap-4">
-                        <Image src={"/countries_viewer/Screenshot 2024-10-11 203328.png"} alt="Countries Viewer" width={64} height={64} className="rounded" priority={true} />
+                        <Image src={withBasePath("/countries_viewer/Screenshot 2024-10-11 203328.png")} alt="Countries Viewer" width={64} height={64} className="rounded" priority={true} />
                         <h1 className="text-3xl sm:text-4xl font-bold text-blue-600 dark:text-blue-500">Countries Viewer</h1>
                     </div>
                     <ImageCarousel folder="countries_viewer" images={images} altPrefix="Screenshot" />

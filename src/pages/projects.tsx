@@ -1,6 +1,8 @@
 import Head from "next/head";
 import ProjectCard from "@/components/ProjectCard";
 import Image from "next/image";
+import { withBasePath } from "@/utils/withBasePath";
+
 
 export default function Projects() {
     return (
@@ -12,13 +14,13 @@ export default function Projects() {
                 <div className="grid gap-8 sm:grid-cols-2">
                     <ProjectCard
                         title="Countries Viewer"
-                        icon={<Image src="/countries_viewer/Screenshot 2024-10-11 203328.png" alt="Countries Viewer" width={48} height={48} className="rounded" />}
+                        icon={<Image src={withBasePath('/countries_viewer/Screenshot 2024-10-11 203328.png')} alt="Countries Viewer" width={48} height={48} className="rounded" />}
                         description="A React + TypeScript app to view, search, and quiz yourself on countries and their details."
                         projectSlug="countries-viewer"
                     />
                     <ProjectCard
                         title="Aljarray"
-                        icon={<Image src="/aljarray/Icon.png" alt="Aljarray" width={48} height={48} className="rounded" />}
+                        icon={<Image src={withBasePath('/aljarray/Icon.png')} alt="Aljarray" width={48} height={48} className="rounded" />}
                         description="A unity infinite runner mobile game."
                         projectSlug="aljarray"
                     />

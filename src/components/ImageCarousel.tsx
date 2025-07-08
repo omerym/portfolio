@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
+import { withBasePath } from "@/utils/withBasePath";
 
 interface ImageCarouselProps {
     folder: string;
@@ -52,7 +53,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 &#8592;
             </button>
             <Image
-                src={`/${folder}/${images[current]}`}
+                src={withBasePath(`/${folder}/${images[current]}`)}
                 alt={`${altPrefix} ${current + 1}`}
                 width={500}
                 height={300}
@@ -65,7 +66,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             >
                 &#8594;
             </button>
-            {/* Thumbnail bar only*/}
+            {/* Thumbnail bar*/}
             <div className="flex gap-2 mt-4 justify-center">
                 {images.map((img, idx) => (
                     <button
@@ -79,7 +80,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
                         tabIndex={0}
                     >
                         <Image
-                            src={`/${folder}/${img}`}
+                            src={withBasePath(`/${folder}/${img}`)}
                             alt={`Thumbnail ${idx + 1}`}
                             width={60}
                             height={36}
