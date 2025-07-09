@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub, FaKaggle } from "react-icons/fa";
 import Link from "next/link";
-import { withBasePath } from "@/utils/withBasePath";
 
 interface CompetitionCardProps {
     title: string;
@@ -44,7 +43,7 @@ const CompetitionCard: React.FC<CompetitionCardProps> = ({
             <p className="text-gray-700 dark:text-slate-200 flex-1">{description}</p>
             <div className="flex gap-3 mt-2">
                 {isInternal ? (
-                    <Link href={withBasePath(solutionUrl)} target={solutionTarget} rel="noopener noreferrer" className="px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors flex items-center">
+                    <Link href={solutionUrl} target={solutionTarget} rel="noopener noreferrer" className="px-4 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors flex items-center">
                         {showIcon && getSolutionIcon(solutionUrl)}
                         Solution
                     </Link>
