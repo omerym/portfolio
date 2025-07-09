@@ -15,7 +15,9 @@ export default function Competitions() {
                             title="Amini Soil Prediction Challenge"
                             source="Zindi"
                             description="Predict soil properties from satellite and field data. A machine learning challenge for African agriculture."
-                            solutionUrl="https://github.com/omerym/Amini-Soil-Prediction-Challenge"
+                            solutionUrl="/competitions/amini-soil-prediction"
+                            solutionTarget="_self"
+                            showIcon={false}
                             competitionUrl="https://zindi.africa/competitions/amini-soil-prediction-challenge"
                         />
                     </div>

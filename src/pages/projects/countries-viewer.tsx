@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import ImageCarousel from "@/components/ImageCarousel";
 import { withBasePath } from "@/utils/withBasePath";
+import { FaGithub } from "react-icons/fa";
 
 const images = [
     "Screenshot 2024-10-11 203328.png",
@@ -42,8 +43,9 @@ export default function CountriesViewer() {
                             href="https://github.com/omerym/CountriesViewer"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 rounded bg-blue-600 text-white dark:bg-blue-500 dark:text-white font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
+                            className="px-4 py-2 rounded bg-blue-600 text-white dark:bg-blue-500 dark:text-white font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors flex items-center"
                         >
+                            <FaGithub size={20} className="inline w-5 h-5 mr-2 align-middle text-white dark:text-white" />
                             Source Code
                         </a>
                         <a
