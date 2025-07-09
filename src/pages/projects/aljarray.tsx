@@ -39,7 +39,7 @@ export default function Aljarray() {
                     </div>
 
                     <div className="flex gap-4 mt-2">
-                        <a href="https://omerym10.itch.io/alljaray" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded bg-amber-500 text-white font-semibold hover:bg-amber-600 transition-colors">Live Demo</a>
+                        <a href="https://omerym10.itch.io/alljaray" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded bg-amber-500 text-white font-semibold hover:bg-amber-600 transition-colors">Download Page</a>
                     </div>
                 </div>
             </main>

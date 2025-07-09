@@ -1,14 +1,26 @@
 import Head from "next/head";
+import CompetitionCard from "@/components/CompetitionCard";
+
 export default function Competitions() {
     return (
         <>
             <Head>
                 <title>Competitions | Omer Yassir</title>
             </Head>
-            <div className="flex flex-col items-center justify-center min-h-screen p-8">
-                <h1 className="text-4xl font-bold mb-4">Competitions</h1>
-                <p className="text-lg text-gray-600">This is the competitions page. Add your competitions here.</p>
-            </div>
+            <main className="pt-10 sm:pt-16 px-4 sm:px-16">
+                <div className="max-w-7xl mx-auto">
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 w-full ">
+                        <CompetitionCard
+                            title="Amini Soil Prediction Challenge"
+                            source="Zindi"
+                            description="Predict soil properties from satellite and field data. A machine learning challenge for African agriculture."
+                            solutionUrl="https://github.com/omerym/Amini-Soil-Prediction-Challenge"
+                            competitionUrl="https://zindi.africa/competitions/amini-soil-prediction-challenge"
+                        />
+                    </div>
+                </div>
+            </main>
         </>
     );
 }
