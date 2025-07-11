@@ -36,9 +36,9 @@ const CompetitionCard: React.FC<CompetitionCardProps> = ({
     const isInternal = solutionUrl.startsWith("/");
     return (
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6 border border-gray-200 dark:border-slate-700 flex flex-col gap-4">
-            <div className="flex items-center gap-3">
+            <div className="flex items-start  gap-3">
                 <h2 className="text-2xl font-bold text-blue-600 dark:text-blue-500">{title}</h2>
-                <span className="ml-auto px-3 py-1 rounded bg-amber-100 dark:bg-amber-600 text-amber-700 dark:text-amber-100 text-xs font-semibold">{source}</span>
+                <span className="ml-auto px-2 py-0.5 rounded border border-amber-300 dark:border-amber-700 bg-transparent text-amber-700 dark:text-amber-100 text-xs font-semibold tracking-wide" style={{ letterSpacing: '0.04em' }}>{source}</span>
             </div>
             <p className="text-gray-700 dark:text-slate-200 flex-1">{description}</p>
             <div className="flex gap-3 mt-2">

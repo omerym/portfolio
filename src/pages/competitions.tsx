@@ -20,6 +20,15 @@ export default function Competitions() {
                             showIcon={false}
                             competitionUrl="https://zindi.africa/competitions/amini-soil-prediction-challenge"
                         />
+                        <CompetitionCard
+                            title="Solana Skill Sprint – Memcoin Graduation"
+                            source="Kaggle"
+                            description="Predict which new Solana memecoins will 'graduate' (reach 85+ SOL liquidity) using on-chain transaction data and feature engineering."
+                            solutionUrl="/competitions/solana-skill-sprint-memcoin"
+                            solutionTarget="_self"
+                            showIcon={false}
+                            competitionUrl="https://www.kaggle.com/competitions/solana-skill-sprint-memcoin-graduation"
+                        />
                     </div>
                 </div>
             </main>
