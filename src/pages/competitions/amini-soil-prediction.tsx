@@ -60,6 +60,10 @@ export default function AminiSoilPrediction() {
 
                     </ol>
                     <div>Note: each of these steps was cross validated to ensure that it actually improved the model.</div>
+                    <h2 className="text-xl sm:text-2xl font-bold">Ranking and Score:</h2>
+                    <p className="text-gray-700 dark:text-slate-200">
+                        My solution achieved a <strong>RMSE</strong> of <strong>1100.665305</strong>, ranking <strong>44</strong> out of <strong>308</strong> participants.
+                    </p>
                     <div className="flex flex-wrap gap-6 mt-2 justify-center">
                         <a
                             href="https://github.com/omerym/Amini-Soil-Prediction-Challenge"
