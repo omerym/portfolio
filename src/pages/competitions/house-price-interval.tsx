@@ -1,7 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-import { withBasePath } from "@/utils/withBasePath";
 import { FaKaggle } from "react-icons/fa";
 
 export default function HousePriceInterval() {
