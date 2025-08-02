@@ -12,6 +12,15 @@ export default function Competitions() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 w-full ">
                         <CompetitionCard
+                            title="Prediction interval competition II: House price"
+                            source="Kaggle"
+                            description="Build regression models that generate the narrowest prediction intervals for house sale prices, rather than focusing on point predictions. The goal is to improve interval accuracy and efficiency."
+                            solutionUrl="/competitions/house-price-interval"
+                            solutionTarget="_self"
+                            showIcon={false}
+                            competitionUrl="https://www.kaggle.com/competitions/prediction-interval-competition-ii-house-price"
+                        />
+                        <CompetitionCard
                             title="Amini Soil Prediction Challenge"
                             source="Zindi"
                             description="Predict soil properties from satellite and field data. A machine learning challenge for African agriculture."
